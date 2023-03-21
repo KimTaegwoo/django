@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from . import views
+
 
 # from pybo import views          # 추가, 삭제
 
@@ -23,5 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('pybo/', views.index),   # views.py 파일의 index 함수를 의미
     # pybo/로 시작하는 페이지를 요청하면 pybo/urls.py 파일에서 처리
-    path('pybo/', include('pybo.urls'))
+    path('pybo/', include('pybo.urls')),
+    path('', views.index),
 ]
