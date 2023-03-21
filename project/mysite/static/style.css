@@ -2,7 +2,7 @@
 텍스트 창의 넓이를 100%로 하고 
 "답변등록" 버튼 상단에 10 픽셀의 마진을 설정 
 */
-
+/* 
 textarea {
     width: 80%;
 }
@@ -10,4 +10,4 @@ textarea {
 
 input[type=submit]{
     margin-top: 20px;
-}
+} */

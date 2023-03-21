@@ -1,6 +1,9 @@
 <!-- 부트스트랩 적용 -->
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+
+{% extends 'base.html' %}
+
+{% block content %}
+
 
 <div class="container my-3">
     <table class="table">
@@ -33,9 +36,12 @@
             {% endif %}
         </tbody>
     </table>
+    <a href="{% url 'pybo:question_create' %}" class="btn btn-primary">
+            질문등록하기
+    </a>
 </div>
 
-
+{% endblock %}
 
 
 <!-- {% if question_list %}

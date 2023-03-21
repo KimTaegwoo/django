@@ -1,0 +1,26 @@
+{% load static %}
+
+<!doctype html>
+
+<html lang="ko">
+<head>
+    <!-- 메타 테그 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- bootstap css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+
+    <!-- pybo css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+    <title> Hello, pybo!</title>
+</head>
+
+<body>
+    <!-- 기본 템플릿에 삽입될 내용 start -->
+    {% block content %}
+    {% endblock %}
+    <!-- 기본 템플릿에 삽입될 내용 end -->
+</body>
+</html>
